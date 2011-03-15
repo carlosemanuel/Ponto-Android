@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Used in View/Spinner1.java -->
+    <string-array name="select_dialog_items">
+        <item>Editar</item>
+        <item>Remover</item>
+    </string-array>
+    <!-- Used in search view -->
+    <string-array name="select_search_items">
+        <item>Pontos do Dia</item>
+        <item>Pontos da Semana</item>
+        <item>Pontos do Mês</item>
+        <item>Pontos entre datas</item>
+        <item>Todos os Pontos</item>
+    </string-array>
+</resources>

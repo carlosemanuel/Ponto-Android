@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:myapp="http://schemas.android.com/apk/res/br.com.carlosemanuel.ponto"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/carbon_fiber">
+
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<LinearLayout android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="fill_parent">
+					
+			<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:text="@string/start_time" 
+					android:textSize="22sp"/>
+		
+			<LinearLayout android:orientation="horizontal"
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content">
+				
+				<TextView android:id="@+id/start_date" 
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:text="01/01/10"
+						android:padding="8px"
+						android:textSize="22sp"/>
+			
+				<TextView android:id="@+id/start_time" 
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:text="08:00"
+						android:padding="5px"
+						android:textSize="22sp"/>
+			</LinearLayout>
+				
+			<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:text="@string/end_time" 
+					android:textSize="22sp"
+					android:paddingTop="8px"/>
+		
+			<LinearLayout android:orientation="horizontal"
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content">
+					
+				<TextView android:id="@+id/end_date" 
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:text="01/01/10"
+						android:padding="8px"
+						android:textSize="22sp" />
+					
+				<TextView android:id="@+id/end_time" 
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:text="12:00"
+						android:padding="5px"
+						android:textSize="22sp" />
+		
+			</LinearLayout>
+					
+			<LinearLayout 
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"
+					android:padding="5px"
+					android:gravity="center_horizontal" >
+					
+				<Button android:text="@string/enter" 
+						android:id="@+id/btnEnterOut"
+						android:layout_width="120sp" 
+						android:layout_height="40sp"/>
+					
+			</LinearLayout>
+		</LinearLayout>
+		
+		<!--LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent" 
+		    android:orientation="vertical"
+		    android:gravity="bottom">
+	
+				<Button android:layout_width="100sp" 
+			           android:layout_height="wrap_content"/>
+				<TextView android:text="teste"
+						android:layout_width="100sp"
+						android:layout_height="wrap_content"/>
+						
+			    <com.admob.android.ads.AdView     
+			           android:id="@+id/ad" 
+			           android:layout_width="fill_parent" 
+			           android:layout_height="wrap_content"
+			           myapp:backgroundColor="#000000"
+			           myapp:primaryTextColor="#FFFFFF"
+			           myapp:secondaryTextColor="#CCCCCC" />
+		</LinearLayout-->
+	</LinearLayout>
+	
+</ScrollView>

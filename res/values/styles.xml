@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="Theme" parent="android:Theme">
+		<item name="android:shadowColor">#AA0000FF</item>
+		<item name="android:shadowDx">4</item>
+		<item name="android:shadowDy">4</item>
+		<item name="android:shadowRadius">5</item>
+	</style>
+</resources>

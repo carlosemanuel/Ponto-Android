@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:myapp="http://schemas.android.com/apk/res/br.com.carlosemanuel.ponto"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/carbon_fiber">
+		
+	<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" 
+			android:id="@+id/edit_date" 
+			android:text="01/01/10"
+			android:gravity="center_horizontal"
+			android:textSize="20sp"/>
+	
+		<TextView 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:text="Hora de Entrada: "
+				android:textSize="20sp" 
+				android:focusable="true" />
+				
+		<TextView 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:id="@+id/edit_start_time"
+				android:text="08:00"
+				android:gravity="right"
+				android:textSize="20sp" 
+				android:focusable="true" />
+				
+	
+		<TextView 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:text="Hora de Saída: "
+				android:textSize="20sp" 
+				android:focusable="true" />
+				
+		<TextView 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:gravity="right"
+				android:id="@+id/edit_end_time"
+				android:text="12:00"
+				android:textSize="20sp" 
+				android:focusable="true" />
+				
+		<!--LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="center_horizontal"
+				android:padding="15sp">
+				
+			<Button
+				android:layout_width="120sp"
+				android:layout_height="wrap_content"
+				android:text="Ok"
+				android:id="@+id/edit_confirm"/>
+				
+			<Button
+				android:layout_width="120sp"
+				android:layout_height="wrap_content"
+				android:text="Cancelar"
+				android:id="@+id/edit_cancel"/>
+		
+		</LinearLayout-->
+				
+</LinearLayout>

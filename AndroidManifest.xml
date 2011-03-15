@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="br.com.carlosemanuel.ponto" android:versionCode="1"
+	android:versionName="0.8.0">
+	<application 
+		android:icon="@drawable/icon" 
+		android:label="@string/app_name" 
+		android:debuggable="false">
+		
+		<activity android:name=".PontoActivity" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".TabPontoActivity" android:label="TabPonto" />
+		
+		<activity android:name=".TabSearchActivity" android:label="TabBusca" />
+		
+		<activity android:name=".ResultSearchActivity" android:label="Resultado da Busca">
+			<category android:name="android.intent.category.DEFAULT" />
+			<action android:name="android.intent.action.VIEW" />
+			<data android:mimeType="application/csv" />
+		</activity>
+		
+		<activity android:name=".EditPontoActivity" android:label="Edição de Ponto" />
+
+		<!-- Broadcast Receiver that will process AppWidget updates -->
+		<receiver android:name=".SmallWidget" android:label="Ponto">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+				<action android:name="br.com.carlosemanuel.ponto.SmallWidget.ACTION_CLIQUE" />
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/widget_ponto" />
+		</receiver>
+		
+		<receiver android:name=".PontoAlarmReceiver" />
+		<!--
+			<intent-filter>
+				<action android:name="android.intent.category.DEFAULT" />
+				<action android:name="EXECUTAR_ALARM" />
+			</intent-filter>
+		</receiver>
+		-->
+	</application>
+
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-sdk android:minSdkVersion="4" />
+</manifest> 

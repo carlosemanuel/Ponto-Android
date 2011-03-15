@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="start_time">Entrada:  </string>
+    <string name="app_name">Ponto</string>
+	<string name="end_time">Saída:  </string>
+	<string name="enter">Entrar</string>
+	<string name="out">Sair</string>
+	<string name="choose">Escolha</string>
+	<string name="alert_confirm_ponto_remove">Deseja realmente remover o Ponto?</string>
+	<string name="alert_dialog_ok">Sim</string>
+	<string name="alert_dialog_cancel">Cancelar</string>
+	<string name="company">Empresa:</string>
+	<string name="send_pontos">Enviar pontos</string>
+	<string name="send_subject">Controle de ponto</string>
+	<string name="send_body">Pontos do dia %1$s ao dia %2$s</string>
+	<string name="widget_enter_msg">Batido Ponto de Entrada</string>
+	<string name="widget_out_msg">Batido Ponto de Saída</string>
+	<string name="info">Sobre</string>
+</resources>
